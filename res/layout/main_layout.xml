@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginTop="10dip" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/btn_nav_filter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="广播随身听"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/icn_poweroff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_circle" >
+
+        <ImageView
+            android:id="@+id/play_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/btn_play" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:background="#20000000" >
+
+        <LinearLayout
+            android:id="@+id/bottom_bar_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/refersh_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_player_reload" />
+
+            <ImageView
+                android:id="@+id/favorite_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_player_favorite" />
+
+            <ImageView
+                android:id="@+id/share_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_player_share" />
+
+            <ImageView
+                android:id="@+id/list_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_player_list" />
+        </LinearLayout>
+         <ImageView
+                android:id="@+id/pop_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dip"
+                android:src="@drawable/btn_player_popup" />
+    </RelativeLayout>
+
+</RelativeLayout>
