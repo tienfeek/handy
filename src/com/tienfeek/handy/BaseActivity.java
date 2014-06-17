@@ -17,6 +17,7 @@ public class BaseActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         
+        
         initSystemBar();
     }
     
